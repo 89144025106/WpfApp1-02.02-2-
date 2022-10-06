@@ -24,11 +24,16 @@ namespace WpfApp1_УП_02._02_ПР_2_Самостоятельная
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void mnuNew_Click(object sender, RoutedEventArgs e)
         {
-            
+            MessageBox.Show("Гуляева Кристина");
         }
+
+        private void mnuNew1_Click(object sender, RoutedEventArgs e)
+        {
+            Grid1.Background = Brushes.Red;
+        }
+                
     }
     }
     
