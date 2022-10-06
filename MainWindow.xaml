@@ -8,5 +8,23 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         
+        <Menu Background="White" BorderBrush="Navy" BorderThickness="1">
+            <MenuItem Header="_Файл">
+                <MenuItem Header="_Фон" />
+                <Button x:Name="Button1" Content="Content" Click="Button1_Click"/>
+                
+                <MenuItem Header="_Информация" IsCheckable="true">
+                    <MenuItem.ToolTip>
+                        <ToolTip>Кристина Гуляева 402 ИСиП.</ToolTip>
+                    </MenuItem.ToolTip>
+                </MenuItem>
+                <MenuItem Header="_Сохранить"/>
+                <Separator/>
+                <MenuItem Header="_Закрыть"/>
+            </MenuItem>
+            <MenuItem Header="_О программе"/>
+            
+        </Menu>
+
     </Grid>
 </Window>
