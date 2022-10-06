@@ -14,7 +14,8 @@
                 <MenuItem Header="_Информация" Click="mnuNew_Click"/>
                 <MenuItem Header="_Сохранить"/>
                 <Separator/>
-                <MenuItem Header="_Закрыть"/>
+                <MenuItem Header="_Закрыть" Click="MenuItem_Click" />
+                
                 <MenuItem Header="_О программе"/>
             </MenuItem>
         </Menu>

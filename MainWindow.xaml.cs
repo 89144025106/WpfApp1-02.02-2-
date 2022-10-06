@@ -33,7 +33,13 @@ namespace WpfApp1_УП_02._02_ПР_2_Самостоятельная
         {
             Grid1.Background = Brushes.Red;
         }
-                
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+
+        }
     }
     }
     
