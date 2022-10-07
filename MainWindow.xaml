@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="Grid1">
 
-        
 
-            
+
+
         <Menu Background="White" BorderBrush="Navy" BorderThickness="1" RenderTransformOrigin="0.149,0.038" Grid.ColumnSpan="2">
             <MenuItem Header="_Файл">
                 <MenuItem Header="_Фон" Click="mnuNew1_Click" />
@@ -21,14 +21,17 @@
                 <MenuItem Header="_О программе"/>
 
             </MenuItem>
-            <Button Background="White" Content="Информация" Margin="12,2,3,3" />
+            <Button Background="White" Content="Информация" />
             <ToolBarTray Background="White" Height="30" VerticalAlignment="Top">
                 <ToolBar Name="MyToolbar" Width="200" Height="30" >
-                    <Button Background="White" Content="Файл" Margin="-15,2,3,3" />
+                    <Button Background="White" Content="Файл"  />
                     <Button Background="White" Content="Закрыть" />
                     <Button Background="White" Content="Фон" />
+
                 </ToolBar>
             </ToolBarTray>
+            <Button Background="White" Content="Сохранить"/>
+            <Button Background="White" Content="О программе"/>
         </Menu>
 
     </Grid>
