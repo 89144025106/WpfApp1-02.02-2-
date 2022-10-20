@@ -5,21 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1_УП_02._02_ПР_2_Самостоятельная"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="450" Width="809.756">
 
-    <Grid Margin="-29,-25,2,-158" Background="Bisque">
+    <Grid Margin="-29,-25,-8,-158" Background="#FFB6B9D8">
         <Grid.RowDefinitions>
             <RowDefinition Height="247*"/>
             <RowDefinition Height="369*"/>
         </Grid.RowDefinitions>
-        <ComboBoxItem Content="Зеленый" />
-        <ComboBoxItem Content="Синий" Margin="10,0,-10,0" />
         <GroupBox Header="Настройки кисти" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="763" FontSize="18" Margin="60,22,0,0">
-        <Label Content="Цвет кисти &#x9;&#x9;&#x9;&#x9;Размер кисти" x:Name="lab1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="688" RenderTransformOrigin="0.469,4.516"/>
+            <Label Content="Цвет кисти &#x9;&#x9;&#x9;&#x9;Размер кисти" x:Name="lab1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="688" RenderTransformOrigin="0.469,4.516"/>
         </GroupBox>
-        <Slider Height="25" Width="100" Minimum="1" Maximum="100" Value="10" Margin="530,93,201,129" />
+        <Slider Height="25" Minimum="1" Maximum="100" Value="10" Margin="530,92,95,124" Background="#FF878FC3" />
+        
+        
         <RadioButton GroupName="Boot" 
-x:Name="RadioButton_Boot1" Margin="55,152,686,59" RenderTransformOrigin="0.5,0.5">
+x:Name="RadioButton_Boot1" Margin="59,152,682,59" RenderTransformOrigin="0.5,0.5" Background="WhiteSmoke">
             <RadioButton.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -27,18 +27,14 @@ x:Name="RadioButton_Boot1" Margin="55,152,686,59" RenderTransformOrigin="0.5,0.5
                     <RotateTransform Angle="-0.395"/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </RadioButton.RenderTransform> Рисование
-        </RadioButton>
-        <RadioButton GroupName="Boot" 
-x:Name="RadioButton_Boot2" Margin="55,183,656,35">Редактирование</RadioButton>
-        <RadioButton GroupName="Boot" 
-x:Name="RadioButton_Boot3" Margin="55,212,690,10">Удаление</RadioButton>
-        <InkCanvas Name="Com1" Margin="173,21,10,10" Background="White" Grid.Row="1">
+            </RadioButton.RenderTransform>Рисование</RadioButton>
+          <RadioButton GroupName="Boot" 
+x:Name="RadioButton_Boot3" Margin="60,186,685,36" RenderTransformOrigin="0.452,-0.737">Удаление</RadioButton>
+        <InkCanvas Name="Com1" Margin="173,2,10,29" Background="White" Grid.Row="1">
             <InkCanvas.DefaultDrawingAttributes>
-                <DrawingAttributes/>
+                <DrawingAttributes Color="Gold" Height="10" Width="1"/>
             </InkCanvas.DefaultDrawingAttributes>
         </InkCanvas>
-
     </Grid>
 </Window>
 
