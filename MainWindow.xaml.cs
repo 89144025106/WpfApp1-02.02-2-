@@ -40,7 +40,14 @@ namespace WpfApp1_УП_02._02_ПР_2_Самостоятельная
 
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+        }
     }
     }
+    
     
 
