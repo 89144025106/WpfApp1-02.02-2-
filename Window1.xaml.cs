@@ -22,18 +22,26 @@ namespace WpfApp1_УП_02._02_ПР_2_Самостоятельная
         public Window1()
         {
             InitializeComponent();
+           
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-
+            ((Slider)sender).SelectionEnd = e.NewValue;
         }
 
-      
-        
-            
+       
         }
     }
+
+   
+        
+
+        
+    
+    
+    
 
     
     

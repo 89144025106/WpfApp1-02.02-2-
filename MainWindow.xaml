@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="Grid1">
-       
-            <Menu Background="White" BorderBrush="Navy" BorderThickness="1" RenderTransformOrigin="0.16,0.333" Grid.ColumnSpan="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Background="White" BorderBrush="Navy" BorderThickness="1" RenderTransformOrigin="0.16,0.333" Grid.ColumnSpan="2">
             <MenuItem Header="_Файл" ToolTip="Главнная вкладка">
                 <MenuItem Header="_Фон" Click="mnuNew1_Click" ToolTip="Изменение цвета фона MainWindow" />
                 <MenuItem Header="_Информация" Click="mnuNew_Click" ToolTip="Вывод личной информации о разработчике"/>
